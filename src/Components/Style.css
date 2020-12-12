@@ -130,9 +130,63 @@ table {
 
 * {
   margin: 0;
+  margin: 0;
   padding: 0;
-  background-color: #f87092;
+  /* background-color: #f1587e; */
 }
+
+.home {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: monospace;
+}
+
+.heading {
+  margin-top: 30vh;
+}
+
+.btndiv {
+  display: flex;
+  justify-content: center;
+}
+
+.btndiv :nth-child(even) {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.btn {
+  margin-top: 70px;
+  background: linear-gradient(145deg, #f52a2d, #fa2263);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 700;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.backbtn {
+  position: absolute;
+  top: 0px;
+  left: 10%;
+  background: linear-gradient(145deg, #f52a2d, #fa2263);
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 700;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 35px;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .slider {
   margin: auto;
   margin-top: 40px;
@@ -156,22 +210,24 @@ table {
 
 .box {
   display: grid;
-  background: linear-gradient(145deg, #ee3b68, #f05078);
-  box-shadow: 41px 41px 82px #ec4e76, -41px -41px 82px #d65475;
+  background: linear-gradient(145deg, #ff004c, #eb1f23);
+  box-shadow: 20px 20px 60px #ec4e76, -20px -20px 60px #d65475;
   border-radius: 20px;
   justify-self: center;
-  width: 75vw;
-  height: 75vh;
+  width: 70vw;
+  height: 70vh;
   grid-template-columns: repeat(50, 1fr);
   box-shadow: 20ch;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .bar {
-  max-height: 73vh;
+  background-color: #d6d6d6;
+  max-height: 68vh;
   border-radius: 5px;
   align-self: center;
   max-width: 20px;
@@ -187,30 +243,23 @@ button {
 
 .box li {
   animation-name: animateIn;
-  animation-duration: 350ms;
+  animation-duration: 450ms;
   animation-fill-mode: backwards;
   animation-timing-function: ease-out;
 }
 
 .container {
+  background-color: #faf8f8;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-items: center;
-  margin-bottom: 20px;
 }
 
 .sortbtn {
-  background: linear-gradient(145deg, #e24169, #f05073);
-  margin: auto;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-size: medium;
-  font-weight: 1000;
-  width: 100px;
-  height: 35px;
-  border-radius: 5px;
-  letter-spacing: 3px;
-  text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 90vw;
 }
 
 @keyframes animateIn {
@@ -221,9 +270,18 @@ button {
 
   100% {
     opacity: 1;
+    transform: scale(0) translateY(0px);
   }
 }
 
+.text1 {
+  color: rgb(253, 51, 88);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text2 {
+}
 /* 
 * {
   box-sizing: border-box;
